@@ -37,6 +37,19 @@
       "errors": {
         "dev": false
       }
+    },
+    {
+      "name": "rpmbuild",
+      "displayName": "RPM Build",
+      "description": "RPM build using Ninja generator",
+      "generator": "Ninja",
+      "binaryDir": "redhat-linux-build",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug",
+        "CPM_USE_LOCAL_PACKAGES": "ON",
+        "CMAKE_CXX_FLAGS": "-flto=auto",
+        "CMAKE_EXPORT_COMPILE_COMMANDS": "ON"
+      }
     }
   ],
   "buildPresets": [
@@ -52,6 +65,13 @@
       "name": "release",
       "displayName": "Release Build",
       "configurePreset": "release",
+      "configuration": "Release",
+      "targets": []
+    },
+    {
+      "name": "rpmbuild",
+      "displayName": "RPM Build",
+      "configurePreset": "rpmbuild",
       "configuration": "Release",
       "targets": []
     }
