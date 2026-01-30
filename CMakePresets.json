@@ -45,10 +45,9 @@
       "generator": "Ninja",
       "binaryDir": "redhat-linux-build",
       "cacheVariables": {
-        "CMAKE_BUILD_TYPE": "Debug",
+        "CMAKE_BUILD_TYPE": "Release",
         "CPM_USE_LOCAL_PACKAGES": "ON",
-        "CMAKE_CXX_FLAGS": "-flto=auto",
-        "CMAKE_EXPORT_COMPILE_COMMANDS": "ON"
+        "CMAKE_CXX_FLAGS": "-flto=auto"
       }
     }
   ],
