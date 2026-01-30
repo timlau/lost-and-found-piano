@@ -43,11 +43,9 @@
       "displayName": "RPM Build",
       "description": "RPM build using Ninja generator",
       "generator": "Ninja",
-      "binaryDir": "redhat-linux-build",
       "cacheVariables": {
         "CMAKE_BUILD_TYPE": "Release",
-        "CPM_USE_LOCAL_PACKAGES": "ON",
-        "CMAKE_CXX_FLAGS": "-flto=auto"
+        "CPM_USE_LOCAL_PACKAGES": "ON"
       }
     }
   ],
